@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>covered_entities_listing.xlsx (Uploaded)</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_137031_fraud_inv_ce_import</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-03 21:16:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ab5ef22db782010fdcf2fb7489619e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CE Imports</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>sys_app_module_8ab5ef22db782010fdcf2fb7489619e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-03 21:16:39</sys_updated_on>
+        <timeline_page/>
+        <title>CE Imports</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</application>
+        <file_path/>
+        <instance_id>bfcb3e87db065300439ef70fbf961960</instance_id>
+        <instance_name>dev59645</instance_name>
+        <name>sys_app_module_8ab5ef22db782010fdcf2fb7489619e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>covered_entities_listing.xlsx (Uploaded)</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_137031_fraud_inv_ce_import</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-12-03 21:16:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8ab5ef22db782010fdcf2fb7489619e1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>CE Imports</sys_name><sys_overrides/><sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package><sys_policy/><sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope><sys_update_name>sys_app_module_8ab5ef22db782010fdcf2fb7489619e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-12-03 21:16:39</sys_updated_on><timeline_page/><title>CE Imports</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1561768706</payload_hash>
+        <record_name>CE Imports</record_name>
+        <reverted_from/>
+        <source>f5028326dbf42010fdcf2fb748961952</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-03 21:16:39</sys_created_on>
+        <sys_id>c3c56362db782010fdcf2fb748961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1762a76d67d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-03 21:16:39</sys_updated_on>
+        <type>Module</type>
+        <update_guid>4fc563629c7820102d54c6bd5bebbb41</update_guid>
+        <update_guid_history>4fc563629c7820102d54c6bd5bebbb41:1561768706,06b5ef225b782010cbe5069219f467e3:473812432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CE Imports">7547a7a2db782010fdcf2fb7489619a6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-03 21:23:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>4122eaf1c9404ca9958fe33ad8476879</sys_id>
+        <sys_metadata>8ab5ef22db782010fdcf2fb7489619e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CE Imports</sys_name>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_scope_delete display_value="">74121f3f4b654680836061af5c724000</sys_scope_delete>
+        <sys_update_name>sys_app_module_8ab5ef22db782010fdcf2fb7489619e1</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8ab5ef22db782010fdcf2fb7489619e1">c3c56362db782010fdcf2fb748961942</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-03 21:23:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

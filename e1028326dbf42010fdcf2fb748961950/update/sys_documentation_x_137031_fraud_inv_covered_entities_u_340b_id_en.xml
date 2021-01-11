@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_340b_id" label="340B ID" language="en" table="x_137031_fraud_inv_covered_entities">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_340b_id</element>
+            <help/>
+            <hint/>
+            <label>340B ID</label>
+            <language>en</language>
+            <name>x_137031_fraud_inv_covered_entities</name>
+            <plural>340B IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 21:22:11</sys_created_on>
+            <sys_id>730763a2db782010fdcf2fb74896193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>340B ID</sys_name>
+            <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+            <sys_update_name>sys_documentation_x_137031_fraud_inv_covered_entities_u_340b_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 21:22:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

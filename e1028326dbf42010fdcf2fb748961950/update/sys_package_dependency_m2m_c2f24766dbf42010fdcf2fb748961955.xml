@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</dependency>
+        <min_version>2.6.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-03 18:44:29</sys_created_on>
+        <sys_id>c2f24766dbf42010fdcf2fb748961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-03 18:44:29</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

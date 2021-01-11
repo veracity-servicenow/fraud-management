@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="de570f2adbf42010fdcf2fb7489619b0" sys_domain="global" table="x_137031_fraud_inv_lead" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da570f2adbf42010fdcf2fb7489619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_137031_fraud_inv_lead" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">de570f2adbf42010fdcf2fb7489619b0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">5a570f2adbf42010fdcf2fb7489619bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56570f2adbf42010fdcf2fb7489619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_137031_fraud_inv_lead" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">de570f2adbf42010fdcf2fb7489619b0</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">1a570f2adbf42010fdcf2fb7489619bb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2570f2adbf42010fdcf2fb7489619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_137031_fraud_inv_lead" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">de570f2adbf42010fdcf2fb7489619b0</sys_ui_form>
+            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_137031_fraud_inv_lead" sys_domain="global" view="417ab6eedb702010fdcf2fb748961931">9e570f2adbf42010fdcf2fb7489619b2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_137031_fraud_inv_lead</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de570f2adbf42010fdcf2fb7489619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_137031_fraud_inv_lead</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+            <sys_update_name>sys_ui_form_sections_de570f2adbf42010fdcf2fb7489619b0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Case" name="case">417ab6eedb702010fdcf2fb748961931</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

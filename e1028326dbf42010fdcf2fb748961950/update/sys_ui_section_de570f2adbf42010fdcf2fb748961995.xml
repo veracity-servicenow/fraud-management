@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Related Records" section_id="de570f2adbf42010fdcf2fb748961995" sys_domain="global" table="x_137031_fraud_inv_lead" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>5e570f2adbf42010fdcf2fb748961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>incident</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>de570f2adbf42010fdcf2fb748961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>problem</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>52570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>post_case_review</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>d2570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>56570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>d6570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>caused_by</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>5a570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_action_summary</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>da570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_id>5e570f2adbf42010fdcf2fb748961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_137031_fraud_inv_lead" sys_domain="global" view="da257b04c927101091f9f06464832723">de570f2adbf42010fdcf2fb748961995</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Related Records</caption>
+            <header>false</header>
+            <name>x_137031_fraud_inv_lead</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-03 19:03:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de570f2adbf42010fdcf2fb748961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_137031_fraud_inv_lead</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+            <sys_update_name>sys_ui_section_de570f2adbf42010fdcf2fb748961995</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-03 19:03:37</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">da257b04c927101091f9f06464832723</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

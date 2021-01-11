@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Covered Entities" max_length="40" name="x_137031_fraud_inv_covered_entities" sizeclass="445" type="collection">
+        <element label="Address1" max_length="40" name="address1" type="string"/>
+        <element label="Address2" max_length="60" name="address2" type="string"/>
+        <element label="Address3" max_length="40" name="address3" type="string"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Entity Name" max_length="120" name="entity_name" type="string"/>
+        <element label="Entity Sub-Division Name" max_length="120" name="entity_sub_division_name" type="string"/>
+        <element label="Participating" max_length="40" name="participating" type="string"/>
+        <element label="Pharmacy ID" max_length="40" name="pharmacy_id" type="string"/>
+        <element label="Pharmacy Name" max_length="40" name="pharmacy_name" type="string"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="340B ID" max_length="40" name="u_340b_id" type="string"/>
+        <element label="Zip" max_length="40" name="zip" type="string"/>
+    </element>
+</database>

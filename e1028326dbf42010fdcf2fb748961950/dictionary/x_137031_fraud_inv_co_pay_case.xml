@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_137031_fraud_inv_base" label="Co-pay Case" max_length="40" name="x_137031_fraud_inv_co_pay_case" sizeclass="1" type="collection"/>
+</database>
