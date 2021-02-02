@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_106059_product_a_product_advisory" label="Product Advisory Branch Case" max_length="40" name="x_106059_product_a_product_advisory_branch_case" sizeclass="3" text_index="true" type="collection"/>
+</database>

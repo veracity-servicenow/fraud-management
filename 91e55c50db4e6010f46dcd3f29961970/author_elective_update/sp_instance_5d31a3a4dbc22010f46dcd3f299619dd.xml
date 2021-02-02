@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">0a633fa4db062010f46dcd3f299619b5</sp_column>
+        <sp_widget display_value="PA Standard Ticket Conversation">8a0127a4dbc22010f46dcd3f2996193b</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 19:07:15</sys_created_on>
+        <sys_id>5d31a3a4dbc22010f46dcd3f299619dd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_instance_5d31a3a4dbc22010f46dcd3f299619dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 20:26:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "x_106059_product_a_product_advisory_branch_case",
+		"displayValue": "x_106059_product_a_product_advisory_branch_case"
+	},
+	"alt_sys_id_query": {
+		"value": "parent.sys_id",
+		"displayValue": "parent.sys_id"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=5d31a3a4dbc22010f46dcd3f299619dd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</application>
+        <file_path/>
+        <instance_id>0da576fbdb7037808aea21c4059619e1</instance_id>
+        <instance_name>dev82427</instance_name>
+        <name>sp_instance_5d31a3a4dbc22010f46dcd3f299619dd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;0a633fa4db062010f46dcd3f299619b5&lt;/sp_column&gt;&lt;sp_widget display_value="PA Standard Ticket Conversation"&gt;8a0127a4dbc22010f46dcd3f2996193b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-28 19:07:15&lt;/sys_created_on&gt;&lt;sys_id&gt;5d31a3a4dbc22010f46dcd3f299619dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Product Assurance" source="x_106059_product_a"&gt;91e55c50db4e6010f46dcd3f29961970&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Product Assurance"&gt;91e55c50db4e6010f46dcd3f29961970&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_5d31a3a4dbc22010f46dcd3f299619dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-28 20:26:51&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "x_106059_product_a_product_advisory_branch_case",
+		"displayValue": "x_106059_product_a_product_advisory_branch_case"
+	},
+	"alt_sys_id_query": {
+		"value": "parent.sys_id",
+		"displayValue": "parent.sys_id"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5d31a3a4dbc22010f46dcd3f299619dd"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1709432632</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0f7b1018db8e6010f46dcd3f2996193a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 20:26:51</sys_created_on>
+        <sys_id>97637fa4db062010f46dcd3f29961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1774aad5d070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 20:26:51</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>13637fa42f0620107cc0cae1d9ee7b84</update_guid>
+        <update_guid_history>13637fa42f0620107cc0cae1d9ee7b84:-1709432632,15e5afe8d6c22010a800c1ff91f35ecd:798742267,bd452be87dc22010528c58f94ed831e0:1343147857,9bc1af2824c22010f45ec69ce0a457dd:-2002787219,1931a3a40cc22010168925158bbc4adf:118444944</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">69cbf72cdb062010f46dcd3f299619ea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 21:03:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>15ad0ae6fe214a9ea0001c62dcc27904</sys_id>
+        <sys_metadata>5d31a3a4dbc22010f46dcd3f299619dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_scope_delete display_value="">256cc35234a341e88a44f7df116753e9</sys_scope_delete>
+        <sys_update_name>sp_instance_5d31a3a4dbc22010f46dcd3f299619dd</sys_update_name>
+        <sys_update_version display_value="sp_instance_5d31a3a4dbc22010f46dcd3f299619dd">97637fa4db062010f46dcd3f29961984</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 21:03:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_master_config">
+    <sys_aw_master_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <brand_color/>
+        <compiled_page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</compiled_page>
+        <compiled_page_registry display_value="Product Assurance">87ea9014db8e6010f46dcd3f29961906</compiled_page_registry>
+        <description>Capture and manage product advisory cases</description>
+        <global_search display_value="Default search settings">97a574ea53c0130084acddeeff7b12a6</global_search>
+        <global_search_data display_value="Product Assurance Search Context Config">cfea9014db8e6010f46dcd3f29961903</global_search_data>
+        <hide_search_results_count>false</hide_search_results_count>
+        <name>Product Assurance</name>
+        <navigation_type>tab</navigation_type>
+        <notifications_enabled>true</notifications_enabled>
+        <primary_color/>
+        <search_enabled>true</search_enabled>
+        <sys_class_name>sys_aw_master_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 10:02:26</sys_created_on>
+        <sys_id>4fea9014db8e6010f46dcd3f29961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Product Assurance</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_aw_master_config_4fea9014db8e6010f46dcd3f29961905</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 10:02:26</sys_updated_on>
+        <user_preference_controls_enabled>true</user_preference_controls_enabled>
+        <workspace_logo/>
+        <workspace_url>product_assurance</workspace_url>
+    </sys_aw_master_config>
+</record_update>

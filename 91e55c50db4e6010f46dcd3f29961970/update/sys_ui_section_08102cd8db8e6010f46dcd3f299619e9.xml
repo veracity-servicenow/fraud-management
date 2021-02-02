@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Related Records" section_id="08102cd8db8e6010f46dcd3f299619e9" sys_domain="global" table="x_106059_product_a_product_advisory" version="3" view="case">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>incident</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>c8102cd8db8e6010f46dcd3f299619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>problem</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>40102cd8db8e6010f46dcd3f299619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>post_case_review</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>c4102cd8db8e6010f46dcd3f299619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>4c102cd8db8e6010f46dcd3f299619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>c0102cd8db8e6010f46dcd3f299619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>caused_by</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>48102cd8db8e6010f46dcd3f299619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_action_summary</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>cc102cd8db8e6010f46dcd3f299619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_id>44102cd8db8e6010f46dcd3f299619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_106059_product_a_product_advisory" sys_domain="global" view="ce015137db612010f46dcd3f29961909">08102cd8db8e6010f46dcd3f299619e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Related Records</caption>
+            <header>false</header>
+            <name>x_106059_product_a_product_advisory</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-27 10:24:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08102cd8db8e6010f46dcd3f299619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_106059_product_a_product_advisory</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+            <sys_update_name>sys_ui_section_08102cd8db8e6010f46dcd3f299619e9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-27 10:24:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Case" name="case">ce015137db612010f46dcd3f29961909</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($rootScope, $scope, spModal, spUtil) {
+    var c = this;
+
+    $scope.data.currentAnswer = "";
+
+    $scope.$on('record.updated', function(name, data) {
+        console.log('Ferguson QandA Formatter received broadcast event of record.updated');
+        spUtil.update($scope);
+    });
+
+    var modalInstance;
+
+    c.openRelatedRecord = function(widgetId, widgetInput, title) {
+        modalInstance = spModal.open({
+            title: title,
+            buttons: [],
+            widget: widgetId,
+            widgetInput: widgetInput,
+            size: 'lg'
+        });
+    };
+	
+	  c.emitAnswers = function(id, val) {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);			
+		};
+
+	/**
+    $rootScope.$on('sp.form.record.updated', function() {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);
+
+			spUtil.update($scope).then(function(data) {
+            console.log('Ferguson QandA Formatter spUtil update');
+            //spUtil.addInfoMessage("testing info message from controller");
+        });
+
+        $scope.server.get({
+				    answers: $scope.c.data.responses,
+            data: $scope.c.data
+        }).then(function(response) {
+            console.log("server get response using $scope.server.get after broadcast " + response.data.responses[0]._fields.answer.value);
+        });
+        //if (modalInstance) modalInstance.close();
+    });
+*/
+	
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>pa_qanda_formatter</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>PA QandA Formatter</name>
+        <option_schema>[{"name":"table","section":"other","label":"Data table","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function($sp, input, data, options, gs) {
+    data.widgetform = '9f51e3ebdbb12010f46dcd3f29961908' // form widget; '85357f52cb30020000f8d856634c9c24'; // ticket
+    var isPopup = false;
+    if (input) {
+        data.view = input.view;
+        if (input.isPopup === true)
+            isPopup = true;
+    } else {
+        data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+    }
+    data.query = $sp.getParameter("query") || options.query || "";
+    data.responses = [];
+    data.table = options.table;
+    var gr = new GlideRecord(data.table);
+    gr.query();
+    while (gr.next()) {
+        var rec = $sp.getRecord(data.table, gr.sys_id);
+        var f = $sp.getForm(data.table, gr.sys_id, data.query, data.view, isPopup);
+        data.responses.push(f);
+    }
+})($sp, input, data, options, gs);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 11:45:50</sys_created_on>
+        <sys_id>6d923c9cdbce6010f46dcd3f29961964</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>PA QandA Formatter</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_widget_6d923c9cdbce6010f46dcd3f29961964</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-31 01:53:03</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="data.invalid_table">
+    <div class="alert alert-info">
+      <span ng-if="data.table_label">${Table not defined} '{{data.table_label}}'</span>
+      <span ng-if="!data.table_label">${Select table on field below or specify on URL} ?id=list&amp;table=table_name</span>
+    </div>
+    <sn-record-picker field="selectedTable" table="'sys_db_object'"
+                      display-field="'label'"
+                      value-field="'name'"
+                      display-fields="'name'"
+                      search-fields="'label,name'" page-size="100" on-change="onChange()" ></sn-record-picker>
+  </div>
+  <!-- div ng-if="data.dataTableWidget && !data.invalid_table" -->
+      <sp-model form_model="data.f" mandatory="mandatory" template-url="ferguson-sp-model.xml"></sp-model>
+      <!-- sp-model form_model="data.f2" mandatory="mandatory" template-url="ferguson-sp-model.xml"></sp-model -->
+  </div -->
+
+        <div class="wrapper-md b-t">
+          <div class="panel panel-default" ng-repeat="item in data.responses | orderBy: 'order'" id="{{item.sys_id}}">
+            <!-- div class="panel-heading"><h4>{{item.name}}</h4></div -->
+            <div class="panel-body">
+              
+              <!-- sp-model form-model="item" mandatory="item._mandatory" template-url="ferguson-sp-model.xml"></sp-model -->
+              <span>
+                  <a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id, 'form-model': item, mandatory: item._mandatory, 'template-url': ferguson-sp-model.xml}, item.title)">
+                <div>{{item.title}}</div>
+                        </a>
+              </span>
+              <span>
+              <input type="text" id="qanda_answer_{{::item.sys_id}}" value="{{item._fields.answer.value}}" ng-model-options="{debounce: 50}" ng-model="data.responses[$index]._fields.answer.value" ng-blur="c.emitAnswers('{{::item.sys_id}}', '{{::item._fields.answer.value}}', $index)"/>
+              </span>
+
+              <!-- a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id}, 
+                        ${item.title})">
+                        {{item.sys_id}}
+                        <span> - </span>
+                        {{item.title}}
+                        </a -->
+                     </div>
+              
+            </div>
+            <div ng-if="data.showPrices && (item.price || item.recurring_price)" class="panel-footer bg-white">{{item.price}} {{item.recurring_price}}</div>
+          </div>
+        </div>
+
+<!-- pre>{{data.responses | json}}</pre -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

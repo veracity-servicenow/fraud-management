@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>kb</category>
+        <client_script><![CDATA[function($scope, $location,$rootScope, $timeout) {
+  /* widget controller */
+  var c = this;
+
+	//if (c.data.selectedIndex == 0) //Populate kb_id as null when more one than KB is associates with Portal and no KB is selected.
+	//	$location.search('kb_id', c.data.kbId);
+	
+	// Update breadcrumbs with knowledge base name 
+	/**
+	if (c.data.kbId && c.data.kbs.length > 1) {
+		c.data.breadcrumbs = [{label: c.data.kbName, url: '#'}];
+		
+	  //Add "All Knowledge" link to breadcrumbs only when multiple KBs are associated to portal.
+			c.data.breadcrumbs.unshift({label: c.data.kbBreadCrumbsMsg, url: '?id='+ c.data.kb_knowledge_page});	
+	} else
+		c.data.breadcrumbs = [{label: c.data.kbBreadCrumbsMsg, url: '#'}];
+	
+	//Update breadcrumbs
+	$timeout(function() {
+		$rootScope.$broadcast('sp.update.breadcrumbs', c.data.breadcrumbs);
+	});
+	*/
+	
+	$scope.selectedBranch = c.data.branchArr[c.data.selectedIndex];
+	//Refresh page by passing kb_id when KB is selected
+	$scope.changeBranch = function (selectedBranch) {
+		$timeout(function() {
+			
+			if (selectedBranch.hasOwnProperty("id")) {
+	//			$location.search({branch_id: selectedBranch.id, sys_id: null, id: c.data.kb_knowledge_page, kb_category: null});
+			   $rootScope.$broadcast('pa.updated.branch', selectedBranch);
+
+			}
+		});
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.category-widget {
+	border: 1px solid $panel-inner-border;
+  
+  .category-list {
+    .fa {
+      margin-right: 5px;
+    }
+    .l-h-1_6x {
+      line-height: 1.6em;
+    }
+    a {
+			width: 100%;
+      vertical-align: middle;
+	    display: inline-block;
+    }
+    .list-group {
+      margin-bottom: 0;
+    }
+    .list-group-item {
+      padding: 0;
+      border: 0;
+      width: 100%;
+    }
+    .group-item {
+      padding: 10px 15px;
+    }
+    .group-item-default {
+      &amp;:hover, &amp;:focus {
+        background-color: darken($panel-default-heading-bg, 2%);
+      }
+    }
+    .group-item-primary {
+      &amp;:hover, &amp;:focus {
+        background-color: lighten($panel-primary-heading-bg, 40%);
+      }
+    }
+    .group-item-success {
+      &amp;:hover {
+        background-color: lighten($panel-success-heading-bg, 3%)
+      }
+    }
+    .group-item-info {
+      &amp;:hover, &amp;:focus {
+        background-color: lighten($panel-info-heading-bg, 3%)
+      }
+    }
+    .group-item-warning {
+      &amp;:hover, &amp;:focus {
+        background-color: $panel-warning-heading-bg
+      }
+    }
+    .group-item-danger {
+      &amp;:hover, &amp;:focus {
+        background-color: lighten($panel-danger-heading-bg, 3%)
+      }
+    }
+    
+    .sub-category-list {
+      .list-group-item {
+        background-color: inherit;
+      }
+    }
+    
+    .list-bg-default {
+        border-left: 15px solid $panel-default-heading-bg;
+      }
+      .list-bg-primary {
+        border-left: 15px solid lighten($panel-primary-heading-bg, 43%);
+      }
+      .list-bg-success {
+        border-left: 15px solid lighten($panel-success-heading-bg, 6%);
+      }
+      .list-bg-info {
+        border-left: 15px solid lighten($panel-info-heading-bg, 6%);
+      }
+      .list-bg-warning {
+        border-left: 15px solid lighten($panel-warning-heading-bg, 3%);
+      }
+      .list-bg-danger {
+        border-left: 15px solid lighten($panel-danger-heading-bg, 6%);
+      }
+    
+    .list-bg-default {
+      background-color: $panel-default-heading-bg;
+    }
+    .list-bg-primary {
+      background-color: lighten($panel-primary-heading-bg, 43%);
+    }
+    .list-bg-success {
+      background-color: lighten($panel-success-heading-bg, 6%);
+    }
+    .list-bg-info {
+      background-color: lighten($panel-info-heading-bg, 6%);
+    }
+    .list-bg-warning {
+      background-color: lighten($panel-warning-heading-bg, 3%);
+    }
+    .list-bg-danger {
+      background-color: lighten($panel-danger-heading-bg, 6%);
+    }
+  }
+}
+.panel-primary .badge {
+  background-color: $panel-primary-heading-bg;
+  color: white;
+}
+.panel-default .badge {
+  background-color: $panel-default-text;
+  color: white
+}
+.panel-success .badge {
+  background-color:  $panel-success-text;
+  color: white;
+}
+.panel-info .badge {
+  background-color: $panel-info-text;
+  color: white;
+}
+.panel-warning .badge {
+  background-color: $panel-warning-text;
+  color: white;
+}
+.panel-danger .badge {
+  background-color: $panel-danger-text;
+  color: white;
+}
+.category-list .badge {
+  text-align: right;
+}
+.text-default {
+  color: $text-muted;
+}
+.select2-choice {
+  border-radius: 0px;
+  padding-left: 15px;
+}
+
+  
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>branch_selector</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Branch Selector</name>
+        <option_schema>[{"name":"location_type_id","section":"other","label":"Location Type ID","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+  var grUser = new GlideRecord('sys_user');
+	grUser.get(gs.getUserID());
+	data.usersBranch = grUser.getValue('location')+'';
+	data.location_type_id = options.location_type_id;
+	
+	data.branchBreadCrumbsMsg = gs.getMessage("Branches");
+	
+	// Get Knowledge Bases Associated to Portal.
+	
+	var branchId = data.usersBranch; // $sp.getParameter('branch_id');
+	var branchArr = [{id: null, title: gs.getMessage("All")}];
+	data.selectedIndex =0;
+	data.breadcrumb = [];
+	
+	// Get Accessible Knowledge Bases Associated to Portal.
+	var grLocs = new GlideRecord('cmn_location');
+	grLocs.addQuery('type',data.location_type_id);
+	grLocs.query();
+	var branchIds = [];
+	while (grLocs.next()) {
+		branchIds.push(grLocs.getValue('sys_id'+''));
+	}
+	
+	data.branches = branchIds;
+	
+	if(data.branches.length > 1){
+		data.branchesBreadCrumbsMsg = gs.getMessage("All Branches");
+	}
+	
+	data.kb_knowledge_page = $sp.getDisplayValue("kb_knowledge_page") || "kb_view";
+	var kb;
+	
+	data.branches.forEach(function(branchSysId, index) {
+		var gr = new GlideRecord("cmn_location");
+		if (gr.get(branchSysId)){
+			 branch = gr.getDisplayValue("name");
+		   var branchObj = {id: branchSysId, name: branch};
+		   branchArr.push(branchObj);
+		}
+		if (branchId == branchSysId){ 
+			data.selectedIndex = index + 1;
+			data.branchName = branch;
+		}
+	});
+	data.branchArr = branchArr;
+	data.branchId=branchId;
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 21:47:59</sys_created_on>
+        <sys_id>bbf5c834db462010f46dcd3f29961917</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Branch Selector</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_widget_bbf5c834db462010f46dcd3f29961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-29 03:29:35</sys_updated_on>
+        <template><![CDATA[<!-- div ng-if="c.data.branchArr.length > 2" ng-class="{'hidden-xs' : hideCategoryWidgetInXS}" class="panel panel-{{::options.color}} category-widget no-border" -->
+<div class="panel panel-{{::options.color}} category-widget no-border">
+  <div class="panel-primary panel-heading">
+    <h2 class="h4 panel-title" ng-bind="::c.options.title">
+    </h2>
+  </div>
+  <ul class="list-group category-list" role="list" aria-label="${Catalogs}">
+    <li role="listitem" class="list-group-item text-overflow-ellipsis" ng-include="'branch-template.html'"/>
+  </ul>
+</div>
+<script type="text/ng-template" id="branch-template.html">
+  <select class="sn-select-basic" ng-change="changeBranch(selectedBranch)" ng-model="selectedBranch" ng-options="branch.name for branch in c.data.branchArr"/>
+</script>]]></template>
+    </sp_widget>
+</record_update>

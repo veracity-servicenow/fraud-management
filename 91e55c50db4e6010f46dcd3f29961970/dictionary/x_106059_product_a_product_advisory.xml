@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sn_customerservice_case" label="Product Advisory" max_length="40" name="x_106059_product_a_product_advisory" sizeclass="7" text_index="true" type="collection">
+        <element label="Action" max_length="40" name="action" type="string"/>
+        <element label="Inventory File" max_length="40" name="inventory_file" type="file_attachment"/>
+        <element label="Product" max_length="40" name="pa_product" type="string"/>
+        <element label="Questions" max_length="4000" name="questions" reference="x_106059_product_a_response_question" type="glide_list"/>
+    </element>
+</database>

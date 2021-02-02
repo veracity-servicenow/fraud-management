@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Workspace Experience">81a6ba9b530233004cb4ddeeff7b1258</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Product Assurance ➚</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>101</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>x/106059/workspace/product_assurance</query>
+        <report/>
+        <roles>x_106059_product_a.pa_manager</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 10:02:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16fa9094db8e6010f46dcd3f299619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Product Assurance ➚</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_app_module_16fa9094db8e6010f46dcd3f299619da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 10:02:40</sys_updated_on>
+        <timeline_page/>
+        <title>Product Assurance ➚</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name>Product Assurance</window_name>
+    </sys_app_module>
+</record_update>

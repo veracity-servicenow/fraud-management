@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_106059_product_a_product_advisory">x_106059_product_a_product_advisory</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>PA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 09:48:23</sys_created_on>
+        <sys_id>49b714d0db8e6010f46dcd3f29961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_number_49b714d0db8e6010f46dcd3f29961905</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 09:48:23</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-29 17:33:55</sys_created_on>
+        <sys_id>b76554c9db826010f46dcd3f29961948</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_106059_product_a_product_advisory.category.x_106059_product_a.pa_user</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_security_acl display_value="x_106059_product_a_product_advisory.category">3b6554c9db826010f46dcd3f29961947</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b76554c9db826010f46dcd3f29961948</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-29 17:35:01</sys_updated_on>
+        <sys_user_role display_value="x_106059_product_a.pa_user" name="x_106059_product_a.pa_user">f6264c4ddb426010f46dcd3f2996192e</sys_user_role>
+        <transaction_id>3b659cc9db426010f46dcd3f29961971</transaction_id>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Response Answer" max_length="40" name="x_106059_product_a_response_answer" sizeclass="8" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Answer" max_length="255" name="answer" type="string"/>
+        <element attributes="encode_utf8=false" label="PA Response" max_length="32" name="pa_response" reference="x_106059_product_a_product_advisory_branch_case_response" type="reference"/>
+        <element label="Question" max_length="32" name="question" reference="x_106059_product_a_response_question" type="reference"/>
+        <index name="index">
+            <element name="pa_response"/>
+        </index>
+        <index name="index2">
+            <element name="question"/>
+        </index>
+    </element>
+</database>

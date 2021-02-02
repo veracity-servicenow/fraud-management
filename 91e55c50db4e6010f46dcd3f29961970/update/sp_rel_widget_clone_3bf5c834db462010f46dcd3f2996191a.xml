@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Branch Selector">bbf5c834db462010f46dcd3f29961917</child>
+        <cloned>2021-01-28 21:47:59</cloned>
+        <last_validated>2021-01-28 21:47:59</last_validated>
+        <parent display_value="KB Knowledge Bases">fa384fda730823004a1f3ae234f6a78a</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;kb&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $location,$rootScope, $timeout) {
+  /* widget controller */
+  var c = this;
+
+	if (c.data.selectedIndex == 0) //Populate kb_id as null when more one than KB is associates with Portal and no KB is selected.
+		$location.search('kb_id', c.data.kbId);
+	
+	// Update breadcrumbs with knowledge base name 
+	if (c.data.kbId &amp;&amp; c.data.kbs.length &gt; 1) {
+		c.data.breadcrumbs = [{label: c.data.kbName, url: '#'}];
+		
+	  //Add "All Knowledge" link to breadcrumbs only when multiple KBs are associated to portal.
+			c.data.breadcrumbs.unshift({label: c.data.kbBreadCrumbsMsg, url: '?id='+ c.data.kb_knowledge_page});	
+	} else
+		c.data.breadcrumbs = [{label: c.data.kbBreadCrumbsMsg, url: '#'}];
+	
+	//Update breadcrumbs
+	$timeout(function() {
+		$rootScope.$broadcast('sp.update.breadcrumbs', c.data.breadcrumbs);
+	});
+	
+	$scope.selectedKB = c.data.kbArr[c.data.selectedIndex];
+	//Refresh page by passing kb_id when KB is selected
+	$scope.changeKB = function (selectedKB) {
+		$timeout(function() {
+			if (selectedKB.hasOwnProperty("id")) {
+				$location.search({kb_id: selectedKB.id, sys_id: null, id: c.data.kb_knowledge_page, kb_category: null});
+			}
+		});
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.category-widget {
+	border: 1px solid $panel-inner-border;
+  
+  .category-list {
+    .fa {
+      margin-right: 5px;
+    }
+    .l-h-1_6x {
+      line-height: 1.6em;
+    }
+    a {
+			width: 100%;
+      vertical-align: middle;
+	    display: inline-block;
+    }
+    .list-group {
+      margin-bottom: 0;
+    }
+    .list-group-item {
+      padding: 0;
+      border: 0;
+      width: 100%;
+    }
+    .group-item {
+      padding: 10px 15px;
+    }
+    .group-item-default {
+      &amp;amp;:hover, &amp;amp;:focus {
+        background-color: darken($panel-default-heading-bg, 2%);
+      }
+    }
+    .group-item-primary {
+      &amp;amp;:hover, &amp;amp;:focus {
+        background-color: lighten($panel-primary-heading-bg, 40%);
+      }
+    }
+    .group-item-success {
+      &amp;amp;:hover {
+        background-color: lighten($panel-success-heading-bg, 3%)
+      }
+    }
+    .group-item-info {
+      &amp;amp;:hover, &amp;amp;:focus {
+        background-color: lighten($panel-info-heading-bg, 3%)
+      }
+    }
+    .group-item-warning {
+      &amp;amp;:hover, &amp;amp;:focus {
+        background-color: $panel-warning-heading-bg
+      }
+    }
+    .group-item-danger {
+      &amp;amp;:hover, &amp;amp;:focus {
+        background-color: lighten($panel-danger-heading-bg, 3%)
+      }
+    }
+    
+    .sub-category-list {
+      .list-group-item {
+        background-color: inherit;
+      }
+    }
+    
+    .list-bg-default {
+        border-left: 15px solid $panel-default-heading-bg;
+      }
+      .list-bg-primary {
+        border-left: 15px solid lighten($panel-primary-heading-bg, 43%);
+      }
+      .list-bg-success {
+        border-left: 15px solid lighten($panel-success-heading-bg, 6%);
+      }
+      .list-bg-info {
+        border-left: 15px solid lighten($panel-info-heading-bg, 6%);
+      }
+      .list-bg-warning {
+        border-left: 15px solid lighten($panel-warning-heading-bg, 3%);
+      }
+      .list-bg-danger {
+        border-left: 15px solid lighten($panel-danger-heading-bg, 6%);
+      }
+    
+    .list-bg-default {
+      background-color: $panel-default-heading-bg;
+    }
+    .list-bg-primary {
+      background-color: lighten($panel-primary-heading-bg, 43%);
+    }
+    .list-bg-success {
+      background-color: lighten($panel-success-heading-bg, 6%);
+    }
+    .list-bg-info {
+      background-color: lighten($panel-info-heading-bg, 6%);
+    }
+    .list-bg-warning {
+      background-color: lighten($panel-warning-heading-bg, 3%);
+    }
+    .list-bg-danger {
+      background-color: lighten($panel-danger-heading-bg, 6%);
+    }
+  }
+}
+.panel-primary .badge {
+  background-color: $panel-primary-heading-bg;
+  color: white;
+}
+.panel-default .badge {
+  background-color: $panel-default-text;
+  color: white
+}
+.panel-success .badge {
+  background-color:  $panel-success-text;
+  color: white;
+}
+.panel-info .badge {
+  background-color: $panel-info-text;
+  color: white;
+}
+.panel-warning .badge {
+  background-color: $panel-warning-text;
+  color: white;
+}
+.panel-danger .badge {
+  background-color: $panel-danger-text;
+  color: white;
+}
+.category-list .badge {
+  text-align: right;
+}
+.text-default {
+  color: $text-muted;
+}
+.select2-choice {
+  border-radius: 0px;
+  padding-left: 15px;
+}
+
+  
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;kb-knowledge-bases&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;KB Knowledge Bases&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.kbBreadCrumbsMsg = gs.getMessage("Knowledge Base");
+	
+	// Get Knowledge Bases Associated to Portal.
+	
+	var kbId = $sp.getParameter('kb_id');
+	var kbArr = [{id: null, title: gs.getMessage("All")}];
+	data.selectedIndex =0;
+	data.breadcrumb = [];
+	
+	// Get Accessible Knowledge Bases Associated to Portal.
+	var kbIds = $sp.getKnowledgeBases();
+	data.kbs = kbIds.split(',');
+	
+	if(data.kbs.length &gt; 1){
+		data.kbBreadCrumbsMsg = gs.getMessage("All Knowledge Bases");
+	}
+	
+	data.kb_knowledge_page = $sp.getDisplayValue("kb_knowledge_page") || "kb_view";
+	var kb;
+	
+	data.kbs.forEach(function(kbSysId, index) {
+		var gr = new GlideRecord("kb_knowledge_base");
+		if (gr.get(kbSysId)){
+			 kb = gr.getDisplayValue("title");
+		   var kbObj = {id: kbSysId, title: kb};
+		   kbArr.push(kbObj);
+		}
+		if (kbId == kbSysId){ 
+			data.selectedIndex = index + 1;
+			data.kbName = kb;
+		}
+	});
+	data.kbArr = kbArr;
+	data.kbId=kbId;
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-23 08:57:19&lt;/sys_created_on&gt;&lt;sys_id&gt;fa384fda730823004a1f3ae234f6a78a&lt;/sys_id&gt;&lt;sys_mod_count&gt;142&lt;/sys_mod_count&gt;&lt;sys_name&gt;KB Knowledge Bases&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Knowledge Base (do not activate...see plugin description)" source="com.glide.service-portal.knowledge-base"&gt;e3873348c967101091f9f06464832714&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa384fda730823004a1f3ae234f6a78a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-07-17 08:41:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.data.kbArr.length &gt; 2" ng-class="{'hidden-xs' : hideCategoryWidgetInXS}" class="panel panel-{{::options.color}} category-widget no-border"&gt;
+  &lt;div class="panel-primary panel-heading"&gt;
+    &lt;h2 class="h4 panel-title" ng-bind="::c.options.title"&gt;
+    &lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;ul class="list-group category-list" role="list" aria-label="${Catalogs}"&gt;
+    &lt;li role="listitem" class="list-group-item text-overflow-ellipsis" ng-include="'kb-template.html'"/&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script type="text/ng-template" id="kb-template.html"&gt;
+  &lt;select class="sn-select-basic" ng-change="changeKB(selectedKB)" ng-model="selectedKB" ng-options="kb.title for kb in c.data.kbArr"/&gt;
+&lt;/script&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 21:47:59</sys_created_on>
+        <sys_id>3bf5c834db462010f46dcd3f2996191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bbf5c834db462010f46dcd3f29961917</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_3bf5c834db462010f46dcd3f2996191a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 21:47:59</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

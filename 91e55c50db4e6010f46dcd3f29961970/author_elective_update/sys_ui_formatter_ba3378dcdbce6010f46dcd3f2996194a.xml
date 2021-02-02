@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter">
+    <sys_ui_formatter action="DELETE">
+        <active>true</active>
+        <angular_module/>
+        <formatter>pa_qanda_formatter.xml</formatter>
+        <name>PA QandA Formatter</name>
+        <sys_class_name>sys_ui_formatter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 11:49:26</sys_created_on>
+        <sys_id>ba3378dcdbce6010f46dcd3f2996194a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PA QandA Formatter</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_ui_formatter_ba3378dcdbce6010f46dcd3f2996194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:48:03</sys_updated_on>
+        <table>x_106059_product_a_product_advisory_branch_case_response</table>
+        <type>formatter</type>
+    </sys_ui_formatter>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</application>
+        <file_path/>
+        <instance_id>0da576fbdb7037808aea21c4059619e1</instance_id>
+        <instance_name>dev82427</instance_name>
+        <name>sys_ui_formatter_ba3378dcdbce6010f46dcd3f2996194a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter"><sys_ui_formatter action="INSERT_OR_UPDATE"><active>true</active><angular_module/><formatter>pa_qanda_formatter.xml</formatter><name>PA QandA Formatter</name><sys_class_name>sys_ui_formatter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-01-27 11:49:26</sys_created_on><sys_id>ba3378dcdbce6010f46dcd3f2996194a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PA QandA Formatter</sys_name><sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package><sys_policy/><sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope><sys_update_name>sys_ui_formatter_ba3378dcdbce6010f46dcd3f2996194a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-01-27 12:48:03</sys_updated_on><table>x_106059_product_a_product_advisory_branch_case_response</table><type>formatter</type></sys_ui_formatter></record_update>]]></payload>
+        <payload_hash>1879062327</payload_hash>
+        <record_name>PA QandA Formatter</record_name>
+        <reverted_from/>
+        <source>0f7b1018db8e6010f46dcd3f2996193a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 12:48:03</sys_created_on>
+        <sys_id>8dd00d98db02a010f46dcd3f2996198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17743e2f45a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:48:03</sys_updated_on>
+        <type>UI Formatter</type>
+        <update_guid>09d00d983c02a0103acd6f109b64918a</update_guid>
+        <update_guid_history>09d00d983c02a0103acd6f109b64918a:1879062327,1e63f4dc3ece6010eef9d84b9d7503e4:-1986106956</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 12:51:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_formatter">sys_ui_formatter</sys_db_object>
+        <sys_id>6a19037e6a09419698db647cdfcf4d89</sys_id>
+        <sys_metadata>ba3378dcdbce6010f46dcd3f2996194a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA QandA Formatter</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_parent display_value="Product Advisory Branch Case Response">69c85014db8e6010f46dcd3f2996194e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_scope_delete display_value="">256cc35234a341e88a44f7df116753e9</sys_scope_delete>
+        <sys_update_name>sys_ui_formatter_ba3378dcdbce6010f46dcd3f2996194a</sys_update_name>
+        <sys_update_version display_value="sys_ui_formatter_ba3378dcdbce6010f46dcd3f2996194a">8dd00d98db02a010f46dcd3f2996198a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:51:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

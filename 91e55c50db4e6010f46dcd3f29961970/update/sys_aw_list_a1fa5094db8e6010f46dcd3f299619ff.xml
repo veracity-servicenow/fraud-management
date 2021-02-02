@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list">
+    <sys_aw_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Product Advisory Branch Cases">e9fa5094db8e6010f46dcd3f299619fd</category>
+        <columns>number,priority,state,assigned_to,assignment_group,short_description,opened_at,opened_by</columns>
+        <condition table="x_106059_product_a_product_advisory_branch_case">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <groups/>
+        <list_attributes/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_aw_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 10:02:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1fa5094db8e6010f46dcd3f299619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_aw_list_a1fa5094db8e6010f46dcd3f299619ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 10:02:37</sys_updated_on>
+        <table>x_106059_product_a_product_advisory_branch_case</table>
+        <title>Open</title>
+        <workspace display_value="Product Assurance">4fea9014db8e6010f46dcd3f29961905</workspace>
+    </sys_aw_list>
+</record_update>

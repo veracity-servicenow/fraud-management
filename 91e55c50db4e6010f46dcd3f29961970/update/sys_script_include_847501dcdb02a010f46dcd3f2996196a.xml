@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_106059_product_a.PAScopedUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PAScopedUtils</name>
+        <script><![CDATA[var PAScopedUtils = Class.create();
+PAScopedUtils.prototype = {
+
+    ADVISORY_TABLE: 'x_106059_product_a_product_advisory',
+    RESPONSE_TABLE: 'x_106059_product_a_product_advisory_branch_case_response',
+	BRANCH_CASE_TABLE: 'x_106059_product_a_product_advisory_branch_case',
+    RESPONSE_ANSWER_TABLE: 'x_106059_product_a_response_answer',
+
+    initialize: function() {},
+
+    saveAnswers: function(answers) {
+        try {
+            var i;
+            for (i = 0; i < answers.length; i++) {
+                var gr = new GlideRecord(this.RESPONSE_ANSWER_TABLE);
+                qanda_id = answers[i].sys_id;
+                if (gr.get(qanda_id)) {
+                    gr.setValue('answer', answers[i]._fields.answer.value);
+                    gr.update();
+                }
+            }
+        } catch (e) {
+            gs.info('CharlesCityUtils: error ' + e);
+        }
+    },
+
+    generateAnswerRecords: function(responseId, advisoryId) {
+
+        var answersDefined = false;
+        var grResponse = new GlideRecord(this.RESPONSE_TABLE);		
+        if (!grResponse.get(responseId)) return; // bail out if no valid response
+        // get reference to case and then use its parent advisory
+		var caseRecord;
+        if (gs.nil(advisoryId)) {
+            caseRecord = grResponse.parent.getRefRecord();
+            advisoryId = caseRecord.getValue("parent");
+        }
+        var advisoryQuestions = this.getAdvisoryQuestions(caseRecord.sys_id, advisoryId);		
+		var self = this;
+        advisoryQuestions.forEach(function(questionId) {
+            var grAnswer = new GlideRecord(self.RESPONSE_ANSWER_TABLE);
+            grAnswer.addQuery("pa_response", responseId);
+            grAnswer.addQuery("question", questionId);
+            grAnswer.query();
+            if (!grAnswer.next()) {
+                grAnswer.initialize();
+                grAnswer.setValue("pa_response", responseId);
+                grAnswer.setValue("question", questionId);
+                grAnswer.insert();
+            }
+        });
+        this.deleteOrphanedAnswers(responseId, advisoryId);
+        answersDefined = true;
+        return answersDefined;
+
+    },
+	
+
+	getAdvisoryQuestions: function(branchCaseId, advisoryId) {
+		if (gs.nil(advisoryId)) {
+			var grCase = new GlideRecord(this.BRANCH_CASE_TABLE);		
+			if (!grCase.get(branchCaseId)) return; // bail out if no valid response
+			// get reference to case and then use its parent advisory
+			advisoryId = grCase.getValue("parent");
+		}
+		questionIds = [];
+		var gr = new GlideRecord(this.ADVISORY_TABLE);
+		if (gr.get(advisoryId)) {
+			questionIds = gr.getValue("questions").split(",");
+		}
+		return questionIds;
+	},
+
+    deleteOrphanedAnswers: function(responseId, advisoryId) {
+		// array of advisory question Ids
+		var questionsStr='';
+        var advisoryQuestions = this.getAdvisoryQuestions(null, advisoryId);
+		if (!gs.nil(advisoryQuestions))
+			questionsStr = advisoryQuestions.join(',');
+        var gr = new GlideRecord(this.RESPONSE_ANSWER_TABLE);
+		gr.addQuery("pa_response", responseId);
+		gr.query();
+		while (gr.next()) {
+			var questionId = gr.getValue("question")+'';
+			if (gs.nil(questionsStr) || questionsStr.indexOf(questionId)<0)
+				gr.deleteRecord();
+		}
+        return questionIds;
+    },
+
+    type: 'PAScopedUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 13:08:25</sys_created_on>
+        <sys_id>847501dcdb02a010f46dcd3f2996196a</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>PAScopedUtils</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sys_script_include_847501dcdb02a010f46dcd3f2996196a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-02 06:50:20</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function($rootScope, $scope, spModal, spUtil) {
+    var c = this;
+
+    $scope.data.currentAnswer = "";
+
+    $scope.$on('record.updated', function(name, data) {
+        console.log('Ferguson QandA Formatter received broadcast event of record.updated');
+        spUtil.update($scope);
+    });
+
+    var modalInstance;
+
+    c.openRelatedRecord = function(widgetId, widgetInput, title) {
+        modalInstance = spModal.open({
+            title: title,
+            buttons: [],
+            widget: widgetId,
+            widgetInput: widgetInput,
+            size: 'lg'
+        });
+    };
+	
+	  c.emitAnswers = function(id, val) {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);			
+		};
+
+	/**
+    $rootScope.$on('sp.form.record.updated', function() {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);
+
+			spUtil.update($scope).then(function(data) {
+            console.log('Ferguson QandA Formatter spUtil update');
+            //spUtil.addInfoMessage("testing info message from controller");
+        });
+
+        $scope.server.get({
+				    answers: $scope.c.data.responses,
+            data: $scope.c.data
+        }).then(function(response) {
+            console.log("server get response using $scope.server.get after broadcast " + response.data.responses[0]._fields.answer.value);
+        });
+        //if (modalInstance) modalInstance.close();
+    });
+*/
+	
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Copy of PA QandA Formatter</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function($sp, input, data, options, gs) {
+    data.widgetform = '9f51e3ebdbb12010f46dcd3f29961908' // form widget; '85357f52cb30020000f8d856634c9c24'; // ticket
+    var isPopup = false;
+    if (input) {
+        data.view = input.view;
+        if (input.isPopup === true)
+            isPopup = true;
+    } else {
+        data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+    }
+    data.query = $sp.getParameter("query") || options.query || "";
+    data.responses = [];
+    data.table = 'x_106059_product_a_response_answer';
+    var gr = new GlideRecord(data.table);
+    gr.query();
+    while (gr.next()) {
+        var rec = $sp.getRecord(data.table, gr.sys_id);
+        var f = $sp.getForm(data.table, gr.sys_id, data.query, data.view, isPopup);
+        data.responses.push(f);
+    }
+})($sp, input, data, options, gs);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 12:28:55</sys_created_on>
+        <sys_id>7c7cb4d4db02a010f46dcd3f29961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of PA QandA Formatter</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_widget_7c7cb4d4db02a010f46dcd3f29961940</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:28:55</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="data.invalid_table">
+    <div class="alert alert-info">
+      <span ng-if="data.table_label">${Table not defined} '{{data.table_label}}'</span>
+      <span ng-if="!data.table_label">${Select table on field below or specify on URL} ?id=list&amp;table=table_name</span>
+    </div>
+    <sn-record-picker field="selectedTable" table="'sys_db_object'"
+                      display-field="'label'"
+                      value-field="'name'"
+                      display-fields="'name'"
+                      search-fields="'label,name'" page-size="100" on-change="onChange()" ></sn-record-picker>
+  </div>
+  <!-- div ng-if="data.dataTableWidget && !data.invalid_table" -->
+      <sp-model form_model="data.f" mandatory="mandatory" template-url="ferguson-sp-model.xml"></sp-model>
+      <!-- sp-model form_model="data.f2" mandatory="mandatory" template-url="ferguson-sp-model.xml"></sp-model -->
+  </div -->
+
+        <div class="wrapper-md b-t">
+          <div class="panel panel-default" ng-repeat="item in data.responses | orderBy: 'order'" id="{{item.sys_id}}">
+            <div class="panel-heading"><h4>{{item.name}}</h4></div>
+            <div class="panel-body">
+              
+              <!-- sp-model form-model="item" mandatory="item._mandatory" template-url="ferguson-sp-model.xml"></sp-model -->
+              <span>
+                  <!-- a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id, 'form-model': item, mandatory: item._mandatory, 'template-url': ferguson-sp-model.xml}, item.title)">
+                <div>{{item.title}}</div>
+                        </a -->
+              </span>
+              <span>
+              <input type="text" id="qanda_answer_{{::item.sys_id}}" value="{{item._fields.answer.value}}" ng-model-options="{debounce: 50}" ng-model="data.responses[$index]._fields.answer.value" ng-blur="c.emitAnswers('{{::item.sys_id}}', '{{::item._fields.answer.value}}', $index)"/>
+              </span>
+
+              <!-- a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id}, 
+                        ${item.title})">
+                        {{item.sys_id}}
+                        <span> - </span>
+                        {{item.title}}
+                        </a -->
+                     </div>
+              
+            </div>
+            <div ng-if="data.showPrices && (item.price || item.recurring_price)" class="panel-footer bg-white">{{item.price}} {{item.recurring_price}}</div>
+          </div>
+        </div>
+
+<!-- pre>{{data.responses | json}}</pre -->
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</application>
+        <file_path/>
+        <instance_id>0da576fbdb7037808aea21c4059619e1</instance_id>
+        <instance_name>dev82427</instance_name>
+        <name>sp_widget_7c7cb4d4db02a010f46dcd3f29961940</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, spModal, spUtil) {
+    var c = this;
+
+    $scope.data.currentAnswer = "";
+
+    $scope.$on('record.updated', function(name, data) {
+        console.log('Ferguson QandA Formatter received broadcast event of record.updated');
+        spUtil.update($scope);
+    });
+
+    var modalInstance;
+
+    c.openRelatedRecord = function(widgetId, widgetInput, title) {
+        modalInstance = spModal.open({
+            title: title,
+            buttons: [],
+            widget: widgetId,
+            widgetInput: widgetInput,
+            size: 'lg'
+        });
+    };
+	
+	  c.emitAnswers = function(id, val) {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);			
+		};
+
+	/**
+    $rootScope.$on('sp.form.record.updated', function() {
+				 $scope.$emit('pa_response_answers_scope_emit', $scope.data.responses);
+
+			spUtil.update($scope).then(function(data) {
+            console.log('Ferguson QandA Formatter spUtil update');
+            //spUtil.addInfoMessage("testing info message from controller");
+        });
+
+        $scope.server.get({
+				    answers: $scope.c.data.responses,
+            data: $scope.c.data
+        }).then(function(response) {
+            console.log("server get response using $scope.server.get after broadcast " + response.data.responses[0]._fields.answer.value);
+        });
+        //if (modalInstance) modalInstance.close();
+    });
+*/
+	
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Copy of PA QandA Formatter&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp, input, data, options, gs) {
+    data.widgetform = '9f51e3ebdbb12010f46dcd3f29961908' // form widget; '85357f52cb30020000f8d856634c9c24'; // ticket
+    var isPopup = false;
+    if (input) {
+        data.view = input.view;
+        if (input.isPopup === true)
+            isPopup = true;
+    } else {
+        data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+    }
+    data.query = $sp.getParameter("query") || options.query || "";
+    data.responses = [];
+    data.table = 'x_106059_product_a_response_answer';
+    var gr = new GlideRecord(data.table);
+    gr.query();
+    while (gr.next()) {
+        var rec = $sp.getRecord(data.table, gr.sys_id);
+        var f = $sp.getForm(data.table, gr.sys_id, data.query, data.view, isPopup);
+        data.responses.push(f);
+    }
+})($sp, input, data, options, gs);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-27 12:28:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7c7cb4d4db02a010f46dcd3f29961940&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of PA QandA Formatter&lt;/sys_name&gt;&lt;sys_package display_value="Product Assurance" source="x_106059_product_a"&gt;91e55c50db4e6010f46dcd3f29961970&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Product Assurance"&gt;91e55c50db4e6010f46dcd3f29961970&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7c7cb4d4db02a010f46dcd3f29961940&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-27 12:28:55&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div ng-if="data.invalid_table"&gt;
+    &lt;div class="alert alert-info"&gt;
+      &lt;span ng-if="data.table_label"&gt;${Table not defined} '{{data.table_label}}'&lt;/span&gt;
+      &lt;span ng-if="!data.table_label"&gt;${Select table on field below or specify on URL} ?id=list&amp;amp;table=table_name&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;sn-record-picker field="selectedTable" table="'sys_db_object'"
+                      display-field="'label'"
+                      value-field="'name'"
+                      display-fields="'name'"
+                      search-fields="'label,name'" page-size="100" on-change="onChange()" &gt;&lt;/sn-record-picker&gt;
+  &lt;/div&gt;
+  &lt;!-- div ng-if="data.dataTableWidget &amp;&amp; !data.invalid_table" --&gt;
+      &lt;sp-model form_model="data.f" mandatory="mandatory" template-url="ferguson-sp-model.xml"&gt;&lt;/sp-model&gt;
+      &lt;!-- sp-model form_model="data.f2" mandatory="mandatory" template-url="ferguson-sp-model.xml"&gt;&lt;/sp-model --&gt;
+  &lt;/div --&gt;
+
+        &lt;div class="wrapper-md b-t"&gt;
+          &lt;div class="panel panel-default" ng-repeat="item in data.responses | orderBy: 'order'" id="{{item.sys_id}}"&gt;
+            &lt;div class="panel-heading"&gt;&lt;h4&gt;{{item.name}}&lt;/h4&gt;&lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+              
+              &lt;!-- sp-model form-model="item" mandatory="item._mandatory" template-url="ferguson-sp-model.xml"&gt;&lt;/sp-model --&gt;
+              &lt;span&gt;
+                  &lt;!-- a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id, 'form-model': item, mandatory: item._mandatory, 'template-url': ferguson-sp-model.xml}, item.title)"&gt;
+                &lt;div&gt;{{item.title}}&lt;/div&gt;
+                        &lt;/a --&gt;
+              &lt;/span&gt;
+              &lt;span&gt;
+              &lt;input type="text" id="qanda_answer_{{::item.sys_id}}" value="{{item._fields.answer.value}}" ng-model-options="{debounce: 50}" ng-model="data.responses[$index]._fields.answer.value" ng-blur="c.emitAnswers('{{::item.sys_id}}', '{{::item._fields.answer.value}}', $index)"/&gt;
+              &lt;/span&gt;
+
+              &lt;!-- a href="javascript:void(0)" 
+                        ng-click="c.openRelatedRecord(data.widgetform, 
+                        {table: item.table, sys_id: item.sys_id}, 
+                        ${item.title})"&gt;
+                        {{item.sys_id}}
+                        &lt;span&gt; - &lt;/span&gt;
+                        {{item.title}}
+                        &lt;/a --&gt;
+                     &lt;/div&gt;
+              
+            &lt;/div&gt;
+            &lt;div ng-if="data.showPrices &amp;&amp; (item.price || item.recurring_price)" class="panel-footer bg-white"&gt;{{item.price}} {{item.recurring_price}}&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+&lt;!-- pre&gt;{{data.responses | json}}&lt;/pre --&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1356727190</payload_hash>
+        <record_name>Copy of PA QandA Formatter</record_name>
+        <reverted_from/>
+        <source>0f7b1018db8e6010f46dcd3f2996193a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 12:28:55</sys_created_on>
+        <sys_id>787cb4d4db02a010f46dcd3f29961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17743d1715c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:28:55</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>b07cb4d48e02a010df9e4d715f739142</update_guid>
+        <update_guid_history>b07cb4d48e02a010df9e4d715f739142:-1356727190</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of PA QandA Formatter">1e9c78d4db02a010f46dcd3f299619b1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-27 12:29:34</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>2632776a29824e53a83bc28e39e4a4f9</sys_id>
+        <sys_metadata>7c7cb4d4db02a010f46dcd3f29961940</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of PA QandA Formatter</sys_name>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_scope_delete display_value="">256cc35234a341e88a44f7df116753e9</sys_scope_delete>
+        <sys_update_name>sp_widget_7c7cb4d4db02a010f46dcd3f29961940</sys_update_name>
+        <sys_update_version display_value="sp_widget_7c7cb4d4db02a010f46dcd3f29961940">787cb4d4db02a010f46dcd3f29961942</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-27 12:29:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

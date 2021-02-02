@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>2</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">a0c56810dbce6010f46dcd3f29961912</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 17:42:20</sys_created_on>
+        <sys_id>6dcd0fe4db822010f46dcd3f299619a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_update_name>sp_instance_table_6dcd0fe4db822010f46dcd3f299619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 17:42:40</sys_updated_on>
+        <table>x_106059_product_a_product_advisory_branch_case</table>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=6dcd0fe4db822010f46dcd3f299619a2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</application>
+        <file_path/>
+        <instance_id>0da576fbdb7037808aea21c4059619e1</instance_id>
+        <instance_name>dev82427</instance_name>
+        <name>sp_instance_table_6dcd0fe4db822010f46dcd3f299619a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list/><filter/><glyph/><id/><maximum_entries>5</maximum_entries><order>2</order><order_by/><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="2">a0c56810dbce6010f46dcd3f29961912</sp_column><sp_page/><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-01-28 17:42:20</sys_created_on><sys_id>6dcd0fe4db822010f46dcd3f299619a2</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package><sys_policy/><sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope><sys_update_name>sp_instance_table_6dcd0fe4db822010f46dcd3f299619a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-01-28 17:42:40</sys_updated_on><table>x_106059_product_a_product_advisory_branch_case</table><title/><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=6dcd0fe4db822010f46dcd3f299619a2"/></record_update>]]></payload>
+        <payload_hash>-940654852</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0f7b1018db8e6010f46dcd3f2996193a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 17:42:40</sys_created_on>
+        <sys_id>5add0728db822010f46dcd3f29961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1774a170c4c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 17:42:40</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>d2dd072859822010392218845d47ea67</update_guid>
+        <update_guid_history>d2dd072859822010392218845d47ea67:-940654852,e5cd0fe4fa8220107d36f484fabc6ba4:1622146918</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">00bec368db822010f46dcd3f299619cb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 17:46:20</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>5774fdd522ea4bc5ae324e2a63f46f09</sys_id>
+        <sys_metadata>6dcd0fe4db822010f46dcd3f299619a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Product Assurance" source="x_106059_product_a">91e55c50db4e6010f46dcd3f29961970</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Product Assurance">91e55c50db4e6010f46dcd3f29961970</sys_scope>
+        <sys_scope_delete display_value="">256cc35234a341e88a44f7df116753e9</sys_scope_delete>
+        <sys_update_name>sp_instance_table_6dcd0fe4db822010f46dcd3f299619a2</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_6dcd0fe4db822010f46dcd3f299619a2">5add0728db822010f46dcd3f29961967</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 17:46:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
