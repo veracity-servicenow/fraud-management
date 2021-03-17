@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="chart.js">a7a8754347011200ba13a5554ee4905c</sp_dependency>
+        <sp_widget display_value="Sample Chart JS">326494e2dbbee010fdcf2fb74896192f</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-12 16:09:38</sys_created_on>
+        <sys_id>b2e4d026dbbee010fdcf2fb74896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chart.js.Sample Chart JS</sys_name>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_b2e4d026dbbee010fdcf2fb74896191b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-12 16:09:38</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

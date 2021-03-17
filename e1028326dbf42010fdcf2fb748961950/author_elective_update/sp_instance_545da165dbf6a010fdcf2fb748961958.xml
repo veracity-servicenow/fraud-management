@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">aa3da165dbf6a010fdcf2fb748961952</sp_column>
+        <sp_widget display_value="Calculator">974a652347332100ba13a5554ee49089</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 20:01:56</sys_created_on>
+        <sys_id>545da165dbf6a010fdcf2fb748961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>sp_instance_545da165dbf6a010fdcf2fb748961958</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-09 20:01:56</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=545da165dbf6a010fdcf2fb748961958"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</application>
+        <file_path/>
+        <instance_id>bfcb3e87db065300439ef70fbf961960</instance_id>
+        <instance_name>dev59645</instance_name>
+        <name>sp_instance_545da165dbf6a010fdcf2fb748961958</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">aa3da165dbf6a010fdcf2fb748961952</sp_column><sp_widget display_value="Calculator">974a652347332100ba13a5554ee49089</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-09 20:01:56</sys_created_on><sys_id>545da165dbf6a010fdcf2fb748961958</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package><sys_policy/><sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope><sys_update_name>sp_instance_545da165dbf6a010fdcf2fb748961958</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-09 20:01:56</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=545da165dbf6a010fdcf2fb748961958"/></record_update>]]></payload>
+        <payload_hash>1763990763</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b0a53743db612010fdcf2fb74896198b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 20:01:56</sys_created_on>
+        <sys_id>dc5da165dbf6a010fdcf2fb74896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1781894ebbd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-09 20:01:56</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>185da165b4f6a010e89869d3b2153a5a</update_guid>
+        <update_guid_history>185da165b4f6a010e89869d3b2153a5a:1763990763</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f37d2965dbf6a010fdcf2fb7489619f8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 20:02:43</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>5f82804db8fc4bf29951cf8bcd7e7f99</sys_id>
+        <sys_metadata>545da165dbf6a010fdcf2fb748961958</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_scope_delete display_value="">74121f3f4b654680836061af5c724000</sys_scope_delete>
+        <sys_update_name>sp_instance_545da165dbf6a010fdcf2fb748961958</sys_update_name>
+        <sys_update_version display_value="sp_instance_545da165dbf6a010fdcf2fb748961958">dc5da165dbf6a010fdcf2fb74896195a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-09 20:02:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

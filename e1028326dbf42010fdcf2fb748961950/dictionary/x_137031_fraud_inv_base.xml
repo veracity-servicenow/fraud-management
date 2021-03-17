@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sn_customerservice_case" label="Fraud Case Types" max_length="40" name="x_137031_fraud_inv_base" sizeclass="3" type="collection">
-        <element label="Covered Entity" max_length="32" name="covered_entity" reference="x_137031_fraud_inv_covered_entities" type="reference"/>
-    </element>
-</database>

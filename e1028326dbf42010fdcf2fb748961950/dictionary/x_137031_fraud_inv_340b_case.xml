@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="x_137031_fraud_inv_base" label="340b Case" max_length="40" name="x_137031_fraud_inv_340b_case" sizeclass="1" type="collection"/>
-</database>

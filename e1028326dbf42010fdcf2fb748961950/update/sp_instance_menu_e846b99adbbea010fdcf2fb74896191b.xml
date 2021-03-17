@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget/>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-12 04:37:05</sys_created_on>
+        <sys_id>e846b99adbbea010fdcf2fb74896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fraud App Nav</sys_name>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>sp_instance_menu_e846b99adbbea010fdcf2fb74896191b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-12 04:37:05</sys_updated_on>
+        <title>Fraud App Nav</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+    <sys_translated_text action="delete_multiple" query="documentkey=e846b99adbbea010fdcf2fb74896191b"/>
+</record_update>

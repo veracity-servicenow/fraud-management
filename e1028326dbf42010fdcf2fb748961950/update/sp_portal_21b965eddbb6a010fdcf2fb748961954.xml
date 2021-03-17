@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary:#428bca;
+$body-bg:#fff;
+$state-success-text:#5cb85c;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#3a95f7;
+$text-color:#717171;
+$sp-logo-margin-y:.5rem;
+$navbar-inverse-link-hover-color:#485563;
+$panel-bg:#fff;
+$brand-success:#5cb85c;
+$navbar-inverse-bg:#ffffff;
+$brand-warning:#f0ad4e;
+$brand-danger:#d9534f;
+$sp-tagline-color:#717171;
+$navbar-inverse-link-color:#0093d0;
+$brand-info:#5bc0de;
+$link-color:#428bca;
+$sp-logo-margin-x:1rem;
+$btn-default-bg:#fff;
+$text-muted:#979797;
+</css_variables>
+        <default>false</default>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="home">6b8ce5e1dbf6a010fdcf2fb7489619c1</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page>
+        <logo>50378e2ddb7aa010fdcf2fb7489619ae</logo>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Fraud Management Menu">4ad9cea1dbbaa010fdcf2fb748961978</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 19:56:02</sys_created_on>
+        <sys_id>21b965eddbb6a010fdcf2fb748961954</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Fraud Management</sys_name>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>sp_portal_21b965eddbb6a010fdcf2fb748961954</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 04:14:34</sys_updated_on>
+        <theme display_value="Fraud Default">d3afb9addb3aa010fdcf2fb7489619ed</theme>
+        <title>Fraud Management</title>
+        <ts_index_group/>
+        <url_suffix>pfm</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=21b965eddbb6a010fdcf2fb748961954"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#99</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo</file_name>
+        <hash>3d95a4dafe172ed83cbd88fb4aba4f6413c2a5d34ece7ba36abfe1786b13aa88</hash>
+        <image_height>49</image_height>
+        <image_width>120</image_width>
+        <size_bytes>1787</size_bytes>
+        <size_compressed>1621</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 21:54:58</sys_created_on>
+        <sys_id>50378e2ddb7aa010fdcf2fb7489619ae</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-09 21:54:59</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>21b965eddbb6a010fdcf2fb748961954</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="50378e2ddb7aa010fdcf2fb7489619ae">50378e2ddb7aa010fdcf2fb7489619ae</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 21:54:58</sys_created_on>
+        <sys_id>90378e2ddb7aa010fdcf2fb7489619ae</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>rVV7ONNrHP+xXGIucWLLNSLFkEssks0QZorl2impRJHbyuW457ahrNlGVCZtuYRQk62QLPfLE0JqZ0VyrSRyqR0953HqqfOcv87zfL6f9/N+vp/3+z7P+8+LP4CxlRDbIgYAgITdfpTz2hqxVrtEQWusOXMVBQACHgfQWOu1LaDcCwCt63jyXW9o+8H/P0Dmf8Ov+j+Q+0NeYF38zaR1QeX/PO2fzE/849X/il+7uetmDh/IXAXofECiEyCsALf4gP3oN9/kxfeDa5nkJQDJA+R6iYqsobW3DcQ5Y1wAQZ6wneTyLEQGOd/TFm2x+II9lRB+GO2ttjocqDx+44qLthiXw/T/OnU9G58ScsLNycZ0u+joQEcFI+9iANJQE7z0rqm++nYJjeijrwcD9zfUEAmHsUYKsu8H7t/EjQ4PxkdjPvXWUjITgk1VUh/eBoANo3YoBNa9id034TJsCRF+fwpurqW6earfvVhzM73fVVtOGCHtlULraMm88ecQi+XH50vFkCxN1WBgUL1UXudsqonTgmOPax1bi/I6h53IjcvPJg87wrv07dweqTIKPdD2I3p1+fI+CDQSm9OSLMbR01O+kc1RMoNIXyJNbcxwQc+fgzZD+kFPCisOgI/LorHaY1GoiY+cdAgTtVsWvihOGoF+vTBjFmCbB7EzJxlo7OOHjzkuhmGOBHjt2nLezWFBESf9JfBwWOxkmPOEE7gJnm4tXpwvI5YcuoTb5UkjZ6jteVFQsVlv3GJnN17CStRXN2ruS9JkeN2NZ6SN841akyLAWYycfu1lnaiTtHTb4auuCRjPHrsw8BWlEqaQ9zWSNbhMC30ihRLwcPzYQC0PJ//YonOpb0v8Sc9lv+YCg0c6mZIaD5pBCD+5u5e7GGxyUHq57q2Fe1SoMFlUtNpgz6GwxKICL8YeEXCHDeL+KeFg6HazuaPLtYSzEynSB/1ykifLFHo1psMMUmlf3ovLCj14aLwa4mehoGT0mpYrJZN5RDtl4dNDmm82ORomgy9ykd8Kj0zHDGQyj737shnXHVFN1l9Jold8IHD0z1QJdniLDA2GlVkyZg29rVlHvWI+F45wSsCB+Ert6T9evyQWKS3yllsFtktxEVe4GbIl8L2sqL6nFDo12MOT7dVQSDrv5qSoyqo530nJj247JfIy5Kv43mnls3Pjkvo+yol+B/cuLLKfdmwy6TCk7y5sdmhyrtYe1ygPFbDYoypSNxNq2K1jtBtzERjkL3iGPygWREDij6J+s658+4HlQ3ysGYst5byBkF7WcIxsus/xm1b5z6urdZE3D/tH6+Ksdpt1SILNtjU2uq/WWR9zGKnvuA9Zljtq7gOrCjz9JCEtJOnNXNJqVnUbT4vpQ1CxycY2tqYEFc462SpvPBMv/znRu53gYHYNlyXRfNA4sjnB9JXZV+mYlYh7aZ/Qj3FaxWBOiBoFhAs7re4VCPc+LuPb46aWBN0gIFLOG5tfQOTNyzUoXI24U0TNnhekU+JaxHPtYQEk160WDRlJG/XHwaU+JRogqYgVYy2cbz0yku4AVbF38Q2CCFml1rwxSLrgJBqj+8oypix0urGq7D6FyrOyIgwaKk1fiK1SAVVWRkFROCcYowKLkKAaGgLR+MbagoL9SJWtTXTIM3+B4AHy5amx+o+HmDUv+ryoISlpOvsHQVkVvYINlI/mlp9lLc6PPwo3yidPpI4U+CdO2DaJGlW2mxqiFF8KOBobOcn3FkI9JJOzYCvaDqW3jCOm1ZN18vAttrWg6z6VLjBvMH0CivEQyfCcmZ9fSTtzbweP61JdoY6nMmlJXHzUYA/dfU7lwbkN4bE7S1m3scW3lyYVtjDf9gS5kjtrRgykj5dEd60Gi/huwzleUtM8oEMchQ9z31LUG9Ocx8wWlGlI9bzAnDTz5HaYwpDNpt/3KZzObiR0BZtGGsdX5fTYPipETqCLiDPhiaUn9u2wFiqWLMk9wmDHFnD7sgjPg4wb+uvuymjMEO2VLYJl35HaB6FK/hls81Zu21wklbZfqvjNNp0Qq2UafNn9Lr6feFq9W9GEwWz7NOzWjdpZ3ia6yOhSXDQ5dOoi63nrbGiczaFrzbNBcY71q1KKc8m8O58/hHz7xeysMahypHfiXxqkgLz7BgAA</data>
+        <length>2148</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="50378e2ddb7aa010fdcf2fb7489619ae">50378e2ddb7aa010fdcf2fb7489619ae</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-09 21:54:58</sys_created_on>
+        <sys_id>14378e2ddb7aa010fdcf2fb7489619ae</sys_id>
+    </sys_attachment_doc>
+</record_update>

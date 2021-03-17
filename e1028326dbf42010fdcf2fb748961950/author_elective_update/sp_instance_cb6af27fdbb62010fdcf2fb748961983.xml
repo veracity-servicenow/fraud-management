@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">aa3da165dbf6a010fdcf2fb748961952</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 01:25:09</sys_created_on>
+        <sys_id>cb6af27fdbb62010fdcf2fb748961983</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_update_name>sp_instance_cb6af27fdbb62010fdcf2fb748961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 01:29:52</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<table style=\"border: 1px solid black;\" data-mce-style=\"border: 1px solid black;\" class=\"mce-item-table\"><tbody><tr><td>396</td></tr></tbody></table>",
+		"displayValue": "<table style=\"border: 1px solid black;\">\n<tbody>\n<tr>\n<td>396</td>\n</tr>\n</tbody>\n</table>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=cb6af27fdbb62010fdcf2fb748961983"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</application>
+        <file_path/>
+        <instance_id>bfcb3e87db065300439ef70fbf961960</instance_id>
+        <instance_name>dev59645</instance_name>
+        <name>sp_instance_cb6af27fdbb62010fdcf2fb748961983</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;aa3da165dbf6a010fdcf2fb748961952&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-17 01:25:09&lt;/sys_created_on&gt;&lt;sys_id&gt;cb6af27fdbb62010fdcf2fb748961983&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv"&gt;e1028326dbf42010fdcf2fb748961950&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Fraud Investigation"&gt;e1028326dbf42010fdcf2fb748961950&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_cb6af27fdbb62010fdcf2fb748961983&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-17 01:29:52&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;table style=\"border: 1px solid black;\" data-mce-style=\"border: 1px solid black;\" class=\"mce-item-table\"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;396&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;",
+		"displayValue": "&lt;table style=\"border: 1px solid black;\"&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;396&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cb6af27fdbb62010fdcf2fb748961983"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-139054150</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b0a53743db612010fdcf2fb74896198b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 01:29:52</sys_created_on>
+        <sys_id>548bf633dbf62010fdcf2fb7489619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1783dcdae530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 01:29:52</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>9c8bf633b1f62010b134651fdd4bdda6</update_guid>
+        <update_guid_history>9c8bf633b1f62010b134651fdd4bdda6:-139054150,e41bfabfc1b62010b8c1a3a11b8499b2:-1033181639,9ccaf2ff37b62010a49965bd5f05d398:-1542057664,1f6afabff3b620100094f088f8245cab:-1668742996</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">77ab3a33dbf62010fdcf2fb74896190e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 01:30:39</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>5fe5c0e6a96f460eabbf8dc093f1e751</sys_id>
+        <sys_metadata>cb6af27fdbb62010fdcf2fb748961983</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Fraud Investigation" source="x_137031_fraud_inv">e1028326dbf42010fdcf2fb748961950</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fraud Investigation">e1028326dbf42010fdcf2fb748961950</sys_scope>
+        <sys_scope_delete display_value="">74121f3f4b654680836061af5c724000</sys_scope_delete>
+        <sys_update_name>sp_instance_cb6af27fdbb62010fdcf2fb748961983</sys_update_name>
+        <sys_update_version display_value="sp_instance_cb6af27fdbb62010fdcf2fb748961983">548bf633dbf62010fdcf2fb7489619a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 01:30:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
