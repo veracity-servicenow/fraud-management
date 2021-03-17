@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2020-12-08 19:39:58</change_date>
-        <changed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</changed_by>
+        <changed_by display_value="Admin ">6816f79cc0a8016401c5a33be04be441</changed_by>
         <content display_value="Set Up Business Rules ">cfb84635c7b23300271beb861dc2609e</content>
         <related_change_log_entry/>
         <related_task_entry/>
